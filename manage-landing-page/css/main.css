@@ -583,6 +583,15 @@ video {
   position: relative;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.mx-24 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -598,6 +607,14 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mr-24 {
+  margin-right: 6rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
 }
 
 .flex {
@@ -672,6 +689,12 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -679,10 +702,6 @@ video {
 .rounded-l-full {
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
-}
-
-.bg-brightRedLight {
-  background-color: hsl (12, 88%, 69%);
 }
 
 .bg-brightRed {
@@ -759,7 +778,17 @@ video {
   background-color: hsl (12, 88%, 69%);
 }
 
+.hover\:text-darkGrayishBlue:hover {
+  --tw-text-opacity: 1;
+  color: hsl(227 12% 61% / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
+  .md\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .md\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -782,6 +811,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
